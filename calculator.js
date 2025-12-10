@@ -12,4 +12,10 @@ function applyDiscount(total, discountPercent) {
     }  
 }
 
-console.log(applyDiscount(600, 10));
+function calculateTotalPrice(price, quantity) {
+    if (price * quantity < 0)
+        return "Invalid"
+    else
+        return price * quantity
+}
+
